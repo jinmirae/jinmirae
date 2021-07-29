@@ -16,9 +16,8 @@ public class Menu {
 	}
 	void showMenu() {
 		//alName, alPrice 출력
-		for(int i=0;i<alName.size();i++) {
-			System.out.println(alName.get(i));
-			System.out.println(alPrice.get(i));
+		for(int i=0;i<alName.size();i++) {// ★ 꼭 외우기★
+			System.out.print(alName.get(i)+"/"+alPrice.get(i)+" ");
 		}
 	}
 }

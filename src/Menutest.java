@@ -5,12 +5,12 @@ public class Menutest {
 
 	public static void main(String[] args) {
 		Menu menu = new Menu();
-		menu.init();
+		menu.init();//초기화선언
 		
 		//메뉴이름/가격을 입력하는 루틴
 		
-		Scanner s1 = new Scanner(System.in);//스캐너는 2개 선언
-		Scanner s2 = new Scanner(System.in);
+		Scanner s1 = new Scanner(System.in);//1개의 class에 2개의 인스턴스변수를 입력하기 위해
+		Scanner s2 = new Scanner(System.in);//scanner를 2개 선언
 		String n = s1.nextLine();
 		
 		while(!n.equals("")) {//공백은 문자로 들어가니 while문에서는 equals를 선언하여 사용
@@ -21,7 +21,7 @@ public class Menutest {
 		}
 		//메뉴이름이 ""이 입력되면 루틴(반복문) 종료.
 		//그동안입력된 메뉴명/가격 출력.
-		menu.showMenu();
+		menu.showMenu();//클래스 void showMenu안에서 출력선언하여  while문이 끝나면 자동으로 전체메뉴 출력
 		
 	}
 }
