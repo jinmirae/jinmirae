@@ -4,10 +4,11 @@ public class Menu {
 	private ArrayList<String> alName;
 	private ArrayList<Integer> alPrice;
 	
-	void init() {
+	Menu() {
 		this.alName= new ArrayList<String>();
 		this.alPrice= new ArrayList<Integer>();
 	}
+	
 	void addName(String name) {
 		this.alName.add(name);//alName에 add로 name을 설정
 	}

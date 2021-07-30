@@ -4,8 +4,7 @@ import java.util.Scanner;
 public class Menutest {
 
 	public static void main(String[] args) {
-		Menu menu = new Menu();
-		menu.init();//초기화선언
+		Menu menu = new Menu();//class에서 선언한 Menu초기화를 자동으로 인식 실행
 		
 		//메뉴이름/가격을 입력하는 루틴
 		
